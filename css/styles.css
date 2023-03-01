@@ -12,6 +12,17 @@ body{
 	background-size: cover;
 	color: #E1E3E6;
 	letter-spacing:.30px;
+
+	animation: 1s ease-out 0s 1 FadeIn;
+}
+
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
 }
 
 a, a:visited, a:active{
@@ -119,5 +130,68 @@ a, a:visited, a:active{
 	float: right;
 }
 
-/* Main sub pages styles */
+/* Mobile styles */
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .app{
+    	padding-left: 10px;
+		padding-right: 10px;
+    }
+
+    .app-last{
+    	padding-left: 12px;
+		padding-right: 12px;
+    }
+
+    .app-date{
+		float: none;
+	}
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .app{
+    	padding-left: 10px;
+		padding-right: 10px;
+    }
+
+    .app-last{
+    	padding-left: 12px;
+		padding-right: 12px;
+    }
+
+    .app-date{
+		float: none;
+	}
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .app{
+    	padding-left: 10px;
+		padding-right: 10px;
+    }
+
+    .app-last{
+    	padding-left: 12px;
+		padding-right: 12px;
+    }
+
+    .app-date{
+		float: none;
+	}
+    
+  }
